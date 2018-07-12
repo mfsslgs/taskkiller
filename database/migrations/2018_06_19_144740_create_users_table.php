@@ -17,8 +17,8 @@ class CreateUsersTable extends Migration {
 			$table->increments('id');
 			$table->string('name', 40)->comment('用户名');
 			$table->string('realname', 30)->nullable();
-			$table->string('mobile', 20)->nullable()->comment('手机号');
-			$table->string('check_mobile', 20)->nullable()->comment('核实电话号码');
+			$table->string('phone', 20)->nullable()->comment('手机号');
+			$table->string('check_phone', 20)->nullable()->comment('核实电话号码');
 			$table->string('remember_token', 100)->nullable()->comment('是否记录登陆信息');
 			$table->timestamps();
 			$table->string('password', 200)->comment('密码');
